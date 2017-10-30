@@ -1,4 +1,5 @@
 class Movie < ApplicationRecord
     include HTTParty
-    base_uri ''
-end
+    has_many: favo
+
+end 
