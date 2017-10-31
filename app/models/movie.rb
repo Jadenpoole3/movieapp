@@ -1,5 +1,8 @@
 class Movie < ApplicationRecord
-    include HTTParty
-    has_many: favo
+
+    has_many :favorite_movies
+    has_many :users, through: :favorite_movies
+
+    attr_accessor :title, :release_year, :rating, :poster
 
 end 
